@@ -1,0 +1,35 @@
+# Example Lovelace Card Configuration
+# Add this to your dashboard in Home Assistant
+
+# Basic configuration
+type: custom:ha-plex-card
+entity: sensor.plex_now_playing
+
+# Full configuration with all options
+type: custom:ha-plex-card
+entity: sensor.plex_now_playing
+name: "Plex show playing"
+show_header: true
+show_title: true
+show_progress: true
+
+# Minimal configuration
+type: custom:ha-plex-card
+entity: sensor.plex_now_playing
+
+# Card without header
+type: custom:ha-plex-card
+entity: sensor.plex_now_playing
+show_header: false
+
+# Card with only poster (no title or progress)
+type: custom:ha-plex-card
+entity: sensor.plex_now_playing
+show_title: false
+show_progress: false
+
+# Card with title but no progress
+type: custom:ha-plex-card
+entity: sensor.plex_now_playing
+show_title: true
+show_progress: false
