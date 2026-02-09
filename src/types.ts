@@ -4,6 +4,7 @@ export interface PlexCardConfig {
   name?: string;
   show_header?: boolean;
   show_title?: boolean;
+  show_episode_info?: boolean;
   show_progress?: boolean;
   show_progress_percent?: boolean;
 }

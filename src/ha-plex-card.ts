@@ -15,6 +15,7 @@ export class HaPlexCard extends LitElement {
       name: 'Plex show playing',
       show_header: true,
       show_title: true,
+      show_episode_info: true,
       show_progress: true,
       show_progress_percent: true,
     };
@@ -30,6 +31,7 @@ export class HaPlexCard extends LitElement {
     this.config = {
       show_header: true,
       show_title: true,
+      show_episode_info: true,
       show_progress: true,
       show_progress_percent: true,
       ...config,
@@ -109,10 +111,14 @@ export class HaPlexCard extends LitElement {
                 <div class="title-section">
                   ${showTitle ? html`<div class="show-title">${showTitle}</div>` : ''}
                   <div class="title">${title}</div>
-                  ${seasonNumber !== undefined && episodeNumber !== undefined
-                    ? html`<div class="episode-info">S${String(seasonNumber).padStart(2, '0')}E${String(episodeNumber).padStart(2, '0')}</div>`
-                    : episodeNumber !== undefined
-                    ? html`<div class="episode-info">Episode ${episodeNumber}</div>`
+                  ${this.config.show_episode_info !== false && (seasonNumber !== undefined || episodeNumber !== undefined)
+                    ? html`
+                        ${seasonNumber !== undefined && episodeNumber !== undefined
+                          ? html`<div class="episode-info">S${String(seasonNumber).padStart(2, '0')}E${String(episodeNumber).padStart(2, '0')}</div>`
+                          : episodeNumber !== undefined
+                          ? html`<div class="episode-info">Episode ${episodeNumber}</div>`
+                          : ''}
+                      `
                     : ''}
                 </div>
               `
@@ -381,6 +387,14 @@ export class HaPlexCardEditor extends LitElement {
           <ha-switch
             .checked=${this._config.show_title !== false}
             .configValue=${'show_title'}
+            @change=${this._valueChanged}
+          ></ha-switch>
+        </ha-formfield>
+
+        <ha-formfield .label=${'Show Episode Info (S01E02)'}>
+          <ha-switch
+            .checked=${this._config.show_episode_info !== false}
+            .configValue=${'show_episode_info'}
             @change=${this._valueChanged}
           ></ha-switch>
         </ha-formfield>

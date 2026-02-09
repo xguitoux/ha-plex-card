@@ -37,7 +37,9 @@ entity: sensor.plex_now_playing
 name: Plex show playing
 show_header: true
 show_title: true
+show_episode_info: true
 show_progress: true
+show_progress_percent: true
 ```
 
 ### Options
@@ -48,7 +50,9 @@ show_progress: true
 | name | string | `Plex show playing` | Card name |
 | show_header | boolean | `true` | Show/hide card header with state badge |
 | show_title | boolean | `true` | Show/hide media title above poster |
-| show_progress | boolean | `true` | Show/hide progress bar with percentage |
+| show_episode_info | boolean | `true` | Show/hide season and episode numbers (S01E02) |
+| show_progress | boolean | `true` | Show/hide progress bar |
+| show_progress_percent | boolean | `true` | Show/hide percentage on progress bar |
 
 ### Expected Sensor Attributes
 
