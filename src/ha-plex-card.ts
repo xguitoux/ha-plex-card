@@ -470,7 +470,7 @@ export class HaPlexCardEditor extends LitElement {
   name: 'Plex Card',
   description: 'Display Plex media with poster, title, and progress',
   preview: true,
-  documentationURL: 'https://github.com/your-repo/ha-plex-card',
+  documentationURL: 'https://github.com/xguitoux/ha-plex-card',
 });
 
 declare global {

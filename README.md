@@ -15,7 +15,7 @@ A custom Lovelace card for Home Assistant to display Plex media information.
 
 ### Manual Installation
 
-1. Download `ha-plex-card.js` from the [latest release](https://github.com/your-username/ha-plex-card/releases/latest)
+1. Download `ha-plex-card.js` from the [latest release](https://github.com/xguitoux/ha-plex-card/releases/latest)
 2. Copy it to `config/www/community/ha-plex-card/`
 3. Add the following to your Lovelace resources:
 

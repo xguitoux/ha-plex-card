@@ -42,4 +42,4 @@ Your Plex sensor should provide:
 - `progress_percent` - Playback progress (0-100)
 - `state` - Playback state (playing, paused, buffering, idle, unavailable)
 
-For more information, see the [README](https://github.com/your-username/ha-plex-card).
+For more information, see the [README](https://github.com/xguitoux/ha-plex-card).
