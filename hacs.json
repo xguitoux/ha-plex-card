@@ -1,5 +1,5 @@
 {
-  "name": "Plex Card",
+  "name": "Plex Now Showing Card",
   "render_readme": true,
   "filename": "ha-plex-card.js"
 }
