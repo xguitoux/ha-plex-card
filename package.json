@@ -1,6 +1,6 @@
 {
   "name": "ha-plex-card",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A custom Plex card for Home Assistant",
   "main": "dist/ha-plex-card.js",
   "scripts": {
