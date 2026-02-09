@@ -1,6 +1,6 @@
-# Plex Now Showing Card
+# Plex Now Playing
 
-A beautiful custom Lovelace card for Home Assistant to display your currently playing Plex media information.
+A beautiful custom Lovelace card for Home Assistant to display your currently playing Plex media.
 
 ## Features
 

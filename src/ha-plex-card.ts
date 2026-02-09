@@ -467,8 +467,8 @@ export class HaPlexCardEditor extends LitElement {
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
   type: 'ha-plex-card',
-  name: 'Plex Card',
-  description: 'Display Plex media with poster, title, and progress',
+  name: 'Plex Now Playing',
+  description: 'Display currently playing Plex media with poster, title, and progress',
   preview: true,
   documentationURL: 'https://github.com/xguitoux/ha-plex-card',
 });
